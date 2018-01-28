@@ -1,0 +1,17 @@
+/*"【顺序结构】编写程序：输入一个矩形的长和宽，计算该矩形的面积和周长，分别显示在两行上。
+例如：输入：3.5  4
+      输出：14.000000
+            15.000000
+【测试数据有多组，每组输出结果后必须换行】"
+*/
+#include<stdio.h>
+int main( )
+{
+  double len,wei;
+  double s,perimeter;
+  printf("input the length and weight of the rectangle\n");
+  scanf("%lf%lf",&len,&wei);
+  s = len * wei;
+  perimeter = (len + wei) * 2;
+  printf("area: %.1lf\nperimeter: %.1lf\n",s,perimeter);
+}

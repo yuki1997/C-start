@@ -1,0 +1,19 @@
+/*"【顺序结构】美元兑换人民币的比率为1：6.258。编写程序，假如你拿x美元到银行去换成RMB，银行每笔交易收费2%，请问兑换后，你到手多少RMB？在两行上分别输出兑换后到手的钱及手续费。
+例如：输入：125
+      输出：766.61
+            15.65
+【测试数据有多组，每组输出结果后必须换行】"
+*/
+#include<stdio.h>
+int main( )
+{
+  double dollar, rmb,fee;
+  printf("how many dollars would you like to change?\n");
+
+  scanf("%lf",&dollar);
+  fee = dollar * 6.258 * 0.02;
+  rmb = dollar * 6.258 - fee;
+
+  printf("rmb: %.2lf\n",rmb);
+  printf("fee: %.2lf\n",fee);
+}

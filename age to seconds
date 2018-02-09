@@ -1,0 +1,22 @@
+/*【顺序结构】一年大约有3.156*10的7次方秒。编写一个程序，提示用户输入年龄，然后显示该年龄对应的秒数。
+例如：输入：19
+      输出：599640000
+【测试数据有多组，每组输出结果后必须换行】*/
+#include<stdio.h>
+#include<math.h>
+int fun( )
+{
+  int age;
+  int sec;
+  scanf("%d",&age);
+
+  sec = age * 3.156e7;
+
+  printf("%d\n",sec);
+}
+int main( )
+{
+
+  fun();
+  return 0;
+}

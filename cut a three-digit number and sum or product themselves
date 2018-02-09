@@ -1,0 +1,26 @@
+/*【顺序结构】编程：输入一个三位整数x(999=>x>=100)，将其分解出百位、十位、个位，并求出各位之和以及各位之积，分别显示在两行上。
+例如：输入：125
+      输出：8
+            10
+【测试数据有多组，每组输出结果后必须换行】*/
+#include<stdio.h>
+int fun( )
+{
+	int x;
+	int g,s,b;
+	int sum = 0;
+	int product = 0;
+
+	scanf("%d",&x);
+
+	g = x % 10;
+	s = (x % 100 - g)/10;
+	b = x/100;
+	sum = g+s+b;
+	product = g*s*b;
+	printf("%d\n%d\n",sum,product);
+}
+int main( )
+{
+	fun();
+}

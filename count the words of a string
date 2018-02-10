@@ -1,0 +1,26 @@
+/*"【字符串】编写程序，输入一个字符串s，统计其中字母的个数。
+例如：输入：Ab c2:3dA A709 bM.c454>AA#66@6B,A
+     输出：13
+【测试数据有多组，每组输出结果后必须换行】
+"*/
+
+#include<stdio.h>
+void fun( )
+ {
+ 	char str[200];
+ 	int count = 0,i;
+
+ 	gets(str);
+
+ 	for(i = 0;str[i];i++)
+ 	{
+ 		if((str[i] >= 'a'&&str[i] <= 'z')||(str[i] >= 'A'&&str[i] <= 'Z'))
+ 			count++;
+	}
+	 printf("%d\n",count);
+ }
+ int main( )
+ {
+ 	fun( );
+ 	return 0;
+ }

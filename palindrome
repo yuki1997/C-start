@@ -1,0 +1,40 @@
+/*"【字符串】编写程序，输入一个字符串，判断该字符串是否回文。是回文，输出“Yes”， 不是，则输出“No”。“回文”是指正读和倒读都一样的字符串。
+例如：输入：12321
+               输出：Yes
+再如：输入：abcab
+               输出：No
+【测试数据有多组，每组输出结果后必须换行】
+"*/
+#include<stdio.h>
+#include<string.h>
+#define N 200
+void fun( )
+{
+	char str[N];
+	int i,j;
+
+	gets(str);
+
+	i = 0;
+	j = strlen(str) - 1;
+	while(i < j)
+	{
+		if(str[i] == str[j])
+		{
+			i++;
+			j--;
+		}
+		else
+			break;
+	}
+	if(i >= j)
+		printf("Yes\n");
+	else
+		printf("No\n");
+		}
+int main( )
+{
+	fun();
+	return 0;
+}
+ 

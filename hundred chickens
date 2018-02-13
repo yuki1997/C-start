@@ -1,0 +1,17 @@
+#include<stdio.h>
+int fun( )
+{
+	int cook,hen,chicken;
+	for(cook = 0;cook <= 20;cook++)
+		for(hen = 0;hen <= 33;hen++){
+				chicken = 100 - hen - cook;
+				if(5*cook+3*hen+chicken/3.0 == 100){
+					printf("cook:%dhen:%dchicken:%d\n",cook,hen,chicken);
+			}
+		}
+ }
+ int main( )
+ {
+ 	fun( );
+ 	return 0;
+  } 

@@ -1,0 +1,28 @@
+/*"【单循环】Fibonacci数列为：
+1   1   2   3   5   8   13   21   34   55   …
+编写程序， 输入一个正整数n，输出该数列前n项的和。
+例如：输入：4
+      输出：7
+【测试数据有多组，每组输出结果后必须换行】"
+*/
+#include<stdio.h>
+int fib(int n);
+int fib(int n)
+{
+	if(n <= 1)
+		return n;
+	else
+		return(fib(n-1)+fib(n-2));
+}
+int main( )
+{
+	int n;
+	int sum = 0,i;
+	scanf("%d",&n);
+	for(i = 0;i < n+1;i++)
+	{
+		sum += fib(i);
+	}
+	printf("%d\n",sum);
+	return 0;
+}

@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+int main()
+{
+    int n;
+    scanf("%d",&n);
+
+    int i,sum=1;
+    for(i=2;i*i<=n;i++)
+    {
+        if(n%i==0)
+        {
+            if(i*i!=n)
+            sum+=(i+n/i);
+            else
+            sum+=i;
+        }
+    }
+    if(sum==n)
+    printf("Yes\n");
+    else
+    printf("No\n");
+
+    return 0;
+}

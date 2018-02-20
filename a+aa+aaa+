@@ -1,0 +1,26 @@
+/*"【单循环】编写程序，输入两个正整数a和n，求a+aa+aaa+…+aa…a(n个a)之和。
+例如：输入：3 2
+      输出：36
+【测试数据有多组，每组输出结果后必须换行】"
+*/
+#include<stdio.h>
+void fun( )
+{
+	int a,n;
+	int sum = 0,i;
+
+	scanf("%d",&a);
+	scanf("%d",&n);
+
+	for(i = 0;i <n;i++)
+	{
+		sum += a;
+		a = a*10+a;
+	}
+	printf("%d\n",sum);
+}
+int main( )
+{
+	fun();
+	return 0;
+}

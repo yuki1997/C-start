@@ -1,3 +1,4 @@
+//training point
 #include<stdio.h>
 #define PI 3.14
 void fun(double r,double *ps,double *pc);

@@ -10,7 +10,8 @@ void fun(double r,double *ps,double *pc)
 }
 int main()
 {
-	double r = 5,ms,mc;
+	double r,ms,mc;
+	scanf("%lf",&r);
 	fun(r,&ms,&mc);
 	printf("s = %.2lf,c = %.2lf\n",ms,mc);
 

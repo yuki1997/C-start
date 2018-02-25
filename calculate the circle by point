@@ -1,0 +1,18 @@
+#include<stdio.h>
+#define PI 3.14
+void fun(double r,double *ps,double *pc);
+void fun(double r,double *ps,double *pc)
+{
+	double t;
+	t = r;
+	*ps = PI*r*r;
+	*pc = PI*r*2;
+}
+int main()
+{
+	double r = 5,ms,mc;
+	fun(r,&ms,&mc);
+	printf("s = %.2lf,c = %.2lf\n",ms,mc);
+
+	return 0;
+}

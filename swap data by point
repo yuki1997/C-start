@@ -1,0 +1,25 @@
+#include<stdio.h>
+void swap(int *pa,int *pb);
+/*void swap(int a,int b)
+{
+	int t;
+	t = a;
+	a = b;
+	b = t;
+	printf("swap: a = %d,b = %d\n",a,b);
+ } */
+void swap(int *pa,int *pb)
+{
+	int t;
+	t = *pa;
+	*pa = *pb;
+	*pb = t;
+	printf("swap: a = %d,b = %d\n",*pa,*pb);
+}
+int main( )
+{
+	int ma = 3,mb = 5;
+	swap(&ma,&mb);
+	printf("main : ma = %d,mb = %d\n",ma,mb);
+	return 0;
+}

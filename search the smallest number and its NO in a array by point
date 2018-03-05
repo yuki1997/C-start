@@ -1,0 +1,40 @@
+#include<stdio.h>
+#include<string.h>
+void input(int *pa,int n);
+int getminid(int *pa,int n);
+void output(int *pa,int n);
+int main( )
+{
+	int A[10];
+	int id;
+
+	input(A,10);
+	id = getminid(A,10);
+	printf("%d,%d\n",id,A[id]);
+	output(A,10);
+
+	return 0;
+}
+void input(int *pa,int n)
+{
+	int in;
+	for(in = 0;in < n;in++)
+		scanf("%d",&pa[in]);
+}
+int getminid(int *pa,int n)
+{
+	int id,in;
+	id = 0;
+	for(in = 1;in < n;in++)
+		if(pa[in] < pa[id])
+			id = in;
+	return id;
+}
+void output(int *pa,int n)
+{
+	int in;
+	for(in = 0;in < n;in++)
+		printf("%4d",*(pa+in));
+	printf("\n");
+}
+ 

@@ -481,10 +481,10 @@ int main()
 	int lenb = sizeof(b)/sizeof(b[0]);
 	int result1 = biSearch(b,lenb,n1);
 
-	if(result1 = 0)
+	if(result1 == 0)
 		printf("找不到\n");
 
-	else if(result1 = 1)
+	else if(result1 == 1)
 	{
 		for(int i = 0;i < lenb;i++)
 			if(n1 == b[i])
@@ -493,10 +493,10 @@ int main()
 
 	int result2 = biSearch(b,lenb,n2);
 
-	if(result2 = 0)
+	if(result2 == 0)
 		printf("找不到\n");
 
-	else if(result2 = 1)
+	else if(result2 == 1)
 	{
 		for(int i = 0;i < lenb;i++)
 			if(n2 == a[i])

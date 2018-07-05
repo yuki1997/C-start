@@ -1,4 +1,5 @@
 #include<stdio.h>
+#define N 3
 int main()
 {
 	int a[10];
@@ -18,5 +19,5 @@ int main()
 		}
 	}
 	for(i = 1;i <= 10;i++)
-		printf("%d ",a[i]);	
+		printf("%d ",a[i]);
 }

@@ -2,19 +2,18 @@
 #include<stdio.h>
 int f(int n)
 {
-  if(n>=10)
-    f(n/10);
-  while(n > 10){
-    printf("%d ",n%10);
-    n = n%10;
-  }
-  return n%10;
+  int x = n*n;
+  int sum=0;
+  while(x > 0){
+      sum += x%10;
+      x = x/10;
+    }
+  return sum;
 }
-int main( )
+int main()
 {
-  int n;
-  scanf("%d",&n);
-  f(n);
-  //printf("%d %d\n", n,f(n));
+  int x;
+  scanf("%d",&x);
+  printf("%d\n",f(x));
   return 0;
 }

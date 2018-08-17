@@ -3,13 +3,13 @@
 #include<stdio.h>
 int main( )
 {
-  int cook,rabbit,a;
-  int i,j;
+  int a,i;
   scanf("%d", &a);
-  for(i = 0;i < a;i++){
-    for(j = 0;j < a;j++)
-      if(2*cook + 4*rabbit == a)
-        printf("%d %d\n",cook,rabbit);
-  }
-  return 0;
+  if(a % 2 != 0)
+    printf("least: 0 most: 0\n");
+  else if(a %4 != 0)
+    printf("least: %d most: %d\n",a / 4 + 1, a / 2);
+  else
+    printf("least: %d most: %d\n",a / 4, a / 2);
+
 }
